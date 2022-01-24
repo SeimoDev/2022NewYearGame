@@ -4,7 +4,10 @@
 
 <head>
     <title>春节解密</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link rel="stylesheet" href="./argon.min.css" type="text/css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -33,11 +36,13 @@
                     </a>
                 </div>
             </section>
-<br/>
+            <br/>
             <div class="about" style="text-align:center;">
                 <form action="demo_form.php">
                     <input type="text" name="lname" placeholder="请输入flag">
-                    <input type="submit" value="提交 ">
+                    <form action="upload_file.php" method="post" enctype="multipart/form-data" class="row align-items-center">
+                        <input type="submit" name="submit" value="提交" class="col-auto btn btn-sm btn-success">
+                    </form>
                 </form>
             </div>
         </div>
