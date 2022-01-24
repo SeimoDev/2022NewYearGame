@@ -1,16 +1,6 @@
-/**
- *
- * 爱艺新拟态风格个人主页
- *
- * @link    http://ay6.top
- * @since   1.0.1
- *
- */
-
 * {
     margin: 0;
     padding: 0;
-    color: hsl(319, 100%, 94%);
     color: #ff0095;
 }
 
@@ -56,8 +46,8 @@ body {
     line-height: 30px;
     z-index: 1;
     border-radius: 50px;
-    background: linear-gradient(225deg, #e68ade, #ffa4ff);
-    box-shadow: -10px 10px 20px #d982d2, 10px -10px 20px #ffb0ff;
+    background: linear-gradient(225deg, #fdaaf6, #f8bcf8);
+    box-shadow: -10px 10px 60px #d982d2, 10px -10px 20px #ffb0ff;
 }
 
 .content {
