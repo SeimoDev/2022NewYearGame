@@ -10,25 +10,6 @@ a {
     text-decoration: none;
 }
 
-.btn {
-    font-size: .875rem;
-    font-weight: 600;
-    line-height: 1.5;
-    d display: inline-block;
-    padding: .625rem 1.25rem;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    text-align: center;
-    vertical-align: middle;
-    color: #525f7f;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-    background-color: transparent
-}
-
 ul li {
     list-style: none;
 }
