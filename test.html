@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ending</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link rel="stylesheet" href="./argon.min.css" type="text/css">
+</head>
+
+<body>
+    <div class="main-content" id="panel">
+        <div class="header bg-pink pb-6">
+            <div class="container-fluid">
+                <div class="header-body">
+                    <div class="row align-items-center py-4">
+                        <div class="col-lg-6 col-7">
+                            <h6 class="h2 text-white d-inline-block mb-0">校验</h6>
+                        </div>
+                        <div class="col-lg-6 col-5 text-right">
+                            <a href="#" class="btn btn-sm btn-neutral" data-toggle="modal" data-target="#modal-default">免责声明</a>
+
+                        </div>
+                        <div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default" style="display: none;" aria-hidden="true">
+                            <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h6 class="modal-title" id="modal-title-default">免责声明
+                                        </h6>
+
+                                    </div>
+                                    <div class="modal-body" style="text-align: left;">
+                                        <p>1.重复提交相同导致系统识别错误将取消领取奖励资格 <br> 2.请记住自己的唯一识别码，在领奖时会用到 <br> 3.剧情纯属虚构，如有雷同，纯属巧合 <br> 4.如有疑问请联系shijiesansha@qq.com
+                                            <br>
+
+                                        </p>
+                                        <p class="text-primary">版权&解释权归属 © 2021 解密策划组</p>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">本人已知情</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt--6">
+            <div class="row">
+                <div class="col-xl-8 center">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title mb-3">嗯？你来了？
+                            </h3>
+                            <p class="card-text mb-4">
+                                <p>看来，你应该已经找到所有的真相了。 <br> 这最后一关，将决定你的命运。 我在某些地方散落了一些图片，<br> 不知道你有没有发现。 如果你找到了，请将文件上传。 <br><br> 不要试图破解，因为你只有一次机会。 <br>毕竟你是个男人，要对你的所作所为负责。 我在终点等你。<br>如果一张图片都没有找到，就直接点击提交吧，并在跳转的网页直接点击结局。
+                                </p>
+                                
+
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="mb-0">相关文件</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>请输入密码：<input id="password" type="password"><input type="button" id="btn" class="btn" onclick="fun(this)"value="提交"/></p>
+                            
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./jquery.min.js"></script>
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script type="text/javascript"language="javascript">
+        function fun(n){
+            
+            $.ajax({
+                url:"test.php",
+                type:"post",
+                data:{action:document.getElementById("password").value},
+                success:function(result){
+                    eval(result);
+                },
+                dataType :"text",
+            });
+        }
+    </script>
+
+</body>
+
+</html>
