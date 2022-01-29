@@ -60,7 +60,7 @@
                                 <br> 4.所有关卡的线索无法跨关使用。
                                 <br> 5.认真阅读TOS（用户协议）
                                 <br> 6.祝玩的开心！
-                                <br> 7.Always remember GIYF!
+                                <br>
                             </p>
 
 
@@ -74,9 +74,9 @@
                     </div>
                     <div class="card-body" style="text-align:center">
                         <form>
-                            <h5>邮箱地址&thinsp;&thinsp;：<input type="text" id="text"></h5>
+                            <h5>邮箱地址&thinsp;&thinsp;：<input type="text" id="email"></h5>
                             <h5> 密&emsp;&emsp;&thinsp;码： <input type="password" id="pwd"></h5>
-                            <input type="submit" name="submit" value="开始游玩！" class="col-auto btn btn-sm btn-success"><br>
+                            <input type="button" name="submit" value="开始游玩！" class="col-auto btn btn-sm btn-success" onclick="tj()"><br>
                             <a href="register.html">没有账号？点击注册。</a>
                         </form>
 
@@ -88,6 +88,30 @@
     </div>
     <script src="./jquery.min.js"></script>
     <script src="./bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+    function tj(){
+    if(document.getElementById("email").value ==""){
+        alert("请输入邮箱地址");
+    }else{
+        if(document.getElementById("pwd").value ==""){
+            alert("请输入密码");
+        }else{
+            $.ajax({
+            url:"login.php",
+            type:"post",
+            data:{email:document.getElementById("email").value,password:document.getElementById("pwd").value},
+            success:function(result){
+                eval(result);
+            },
+            datatype:"text",
+
+        })
+        }
+    }
+    
+        
+    }
+    </script>
 
 </body>
 <footer>

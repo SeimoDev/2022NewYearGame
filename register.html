@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./argon.min.css" type="text/css">
 </head>
 
-<body>
+<body onload="thetime=0;">
     <div class="main-content" id="panel">
         <div class="header bg-pink pb-6">
             <div class="container-fluid">
@@ -34,18 +34,51 @@
                 <div class="card">
 
                 </div>
-                <!-- 此处编写注册和协议逻辑 -->
+                <!-- 此处编写注册和协议逻辑 为什么要在这编写呢？我偏不！ -->
                 <div class="card">
                     <div class="card-header">
                         <h3 class="mb-0">注册账号</h3>
                     </div>
                     <div class="card-body" style="text-align:center">
                         <form>
-                            <h5>邮箱地址&thinsp;&thinsp;：<input type="text" id="text"></h5>
-                            <h5>用户名&emsp;：<input type="text" id="text"></h5>
-                            <h5> 密&emsp;&emsp;&thinsp;码： <input type="password" id="pwd"></h5>
-                            <h5> 确认密码： <input type="password" id="pwd"></h5>
-                            <input type="submit" name="submit" value="注册" class="col-auto btn btn-sm btn-success"><br>
+                            <h5>邮箱地址&thinsp;&thinsp;：<input id="mail" type="text" autofocus required></br><input
+                                    type="button" onclick="a()" value="获取验证码" class="col-auto btn btn-sm btn-success">
+                            </h5>
+                            <h5>验证码&emsp;：<input id="surecode" type="text" required></h5>
+                            <h5>用户名&emsp;<input id="username" type="text" autofocus required></h5>
+                            <h5> 密&emsp;&emsp;&thinsp;码： <input id="password" type="password" required></h5>
+                            <h5> 确认密码：<input id="surePassword" type="password" required></h5>
+                            <input type="button" name="submit" value="注册" class="col-auto btn btn-sm btn-success"
+                                onclick="
+                
+                            for (i = 0; i < form.length; i++) {
+                                if (form.elements[i].value == '') {
+                                    alert('请填写完整');
+                                    return false;
+                            }}
+                            var scode = document.getElementById('surecode').value;
+                            //document.cookie='scode='+scode;
+                            document.cookie='code='+code;
+                            if(scode == code){
+                            document.cookie='username='+document.getElementById('username').value;
+                            document.cookie='password='+document.getElementById('password').value;
+                            document.cookie='mail='+document.getElementById('mail').value;
+                            location.href='register.php';
+                            
+                            /*$.ajax({
+                            url:'register.php',
+                            type:'post',
+                            data:{username:document.getElementById('username').value,password:document.getElementById('password').value,mail:document.getElementById('mail').value,code:document.getElementById('code').value},
+                            success:function(result){
+                                eval(result);
+                            },
+                            dataType :'text',
+                        });*/
+                            }else{
+                            alert('验证码错误');
+                            }
+                            
+                            "><br>
                             <input type="checkbox" name="tos">已阅读并同意<a href="index.html"> 用户协议</a><br>
                             <a href="index.html">已有账号？点击登录！</a>
                         </form>
@@ -57,7 +90,33 @@
     </div>
     </div>
     <script src="./jquery.min.js"></script>
-    <script src="./bootstrap.bundle.min.js"></script>
+    <script>
+        function a() {
+            
+            //alert("hh");
+            var b = document.getElementById("mail").value;
+            if (b == "") {
+                alert("请输入邮箱");
+            } else {
+                if(Number(new Date()) - thetime>=60000){
+                    thetime = Number(new Date());
+                code = Math.round(Math.random() * (999999 - 100000) + 100000);
+                $.ajax({
+                    url: "mail.php",
+                    type: "post",
+                    data: { email: document.getElementById("mail").value, code: code },
+                    success: function (result) {
+                        eval(result);
+                    },
+                    dataType: "text",
+                });
+            }else{
+                alert("请在"+Math.round((60000-Number(new Date())+thetime)/1000)+"秒后获取");
+            }
+        }
+        
+    }            
+    </script>
 
 </body>
 <footer>
@@ -65,7 +124,8 @@
         <div class="card-header" style="text-align:center">
             联系我们：seimo@sakura-bbs.cn
             <br> 官方鹅群：542645899
-            <br>本游戏策划团队版权所有，遵循AGPL开源协议。游戏所有源码将于结束后开源，可关注B站@Seimo 或加入官方鹅群获取详情</div>
+            <br>本游戏策划团队版权所有，遵循AGPL开源协议。游戏所有源码将于结束后开源，可关注B站@Seimo 或加入官方鹅群获取详情
+        </div>
     </div>
 </footer>
 
