@@ -41,15 +41,13 @@
                     </div>
                     <div class="card-body" style="text-align:center">
                         <form>
-                            <h5>邮箱地址&thinsp;&thinsp;：<input id="mail" type="text" autofocus required></br><input
-                                    type="button" onclick="a()" value="获取验证码" class="col-auto btn btn-sm btn-success">
-                            </h5>
-                            <h5>验证码&emsp;：<input id="surecode" type="text" required></h5>
-                            <h5>用户名&emsp;<input id="username" type="text" autofocus required></h5>
-                            <h5> 密&emsp;&emsp;&thinsp;码： <input id="password" type="password" required></h5>
-                            <h5> 确认密码：<input id="surePassword" type="password" required></h5>
-                            <input type="button" name="submit" value="注册" class="col-auto btn btn-sm btn-success"
-                                onclick="
+                            <h5><input id="mail" type="text" autofocus required placeholder="请输入邮箱"></h5>
+                            <input type="button" onclick="a()" value="获取验证码" class="col-auto btn btn-sm btn-success">
+                            <h5><br><input id="surecode" type="text" required placeholder="请输入验证码"></h5>
+                            <h5><input id="username" type="text" autofocus required placeholder="请输入用户名"></h5>
+                            <h5><input id="password" type="password" required placeholder="请设置密码"></h5>
+                            <h5><input id="surePassword" type="password" required placeholder="请再输入一次密码"></h5>
+                            <input type="button" name="submit" value="注册" class="col-auto btn btn-sm btn-success" onclick="
                 
                             for (i = 0; i < form.length; i++) {
                                 if (form.elements[i].value == '') {
@@ -92,30 +90,33 @@
     <script src="./jquery.min.js"></script>
     <script>
         function a() {
-            
+
             //alert("hh");
             var b = document.getElementById("mail").value;
             if (b == "") {
                 alert("请输入邮箱");
             } else {
-                if(Number(new Date()) - thetime>=60000){
+                if (Number(new Date()) - thetime >= 60000) {
                     thetime = Number(new Date());
-                code = Math.round(Math.random() * (999999 - 100000) + 100000);
-                $.ajax({
-                    url: "mail.php",
-                    type: "post",
-                    data: { email: document.getElementById("mail").value, code: code },
-                    success: function (result) {
-                        eval(result);
-                    },
-                    dataType: "text",
-                });
-            }else{
-                alert("请在"+Math.round((60000-Number(new Date())+thetime)/1000)+"秒后获取");
+                    code = Math.round(Math.random() * (999999 - 100000) + 100000);
+                    $.ajax({
+                        url: "mail.php",
+                        type: "post",
+                        data: {
+                            email: document.getElementById("mail").value,
+                            code: code
+                        },
+                        success: function(result) {
+                            eval(result);
+                        },
+                        dataType: "text",
+                    });
+                } else {
+                    alert("请在" + Math.round((60000 - Number(new Date()) + thetime) / 1000) + "秒后获取");
+                }
             }
+
         }
-        
-    }            
     </script>
 
 </body>

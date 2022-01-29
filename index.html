@@ -74,10 +74,10 @@
                     </div>
                     <div class="card-body" style="text-align:center">
                         <form>
-                            <h5>邮箱地址&thinsp;&thinsp;：<input type="text" id="email"></h5>
-                            <h5> 密&emsp;&emsp;&thinsp;码： <input type="password" id="pwd"></h5>
+                            <input type="text" id="email" placeholder="登录邮箱"></h5><br><br>
+                            <input type="password" id="pwd" placeholder="密码"></h5><br><br>
                             <input type="button" name="submit" value="开始游玩！" class="col-auto btn btn-sm btn-success" onclick="tj()"><br>
-                            <a href="register.html">没有账号？点击注册。</a>
+                            <br><a href="register.html">没有账号？点击注册。</a>
                         </form>
 
                     </div>
@@ -89,28 +89,31 @@
     <script src="./jquery.min.js"></script>
     <script src="./bootstrap.bundle.min.js"></script>
     <script type="text/javascript">
-    function tj(){
-    if(document.getElementById("email").value ==""){
-        alert("请输入邮箱地址");
-    }else{
-        if(document.getElementById("pwd").value ==""){
-            alert("请输入密码");
-        }else{
-            $.ajax({
-            url:"login.php",
-            type:"post",
-            data:{email:document.getElementById("email").value,password:document.getElementById("pwd").value},
-            success:function(result){
-                eval(result);
-            },
-            datatype:"text",
+        function tj() {
+            if (document.getElementById("email").value == "") {
+                alert("请输入邮箱地址");
+            } else {
+                if (document.getElementById("pwd").value == "") {
+                    alert("请输入密码");
+                } else {
+                    $.ajax({
+                        url: "login.php",
+                        type: "post",
+                        data: {
+                            email: document.getElementById("email").value,
+                            password: document.getElementById("pwd").value
+                        },
+                        success: function(result) {
+                            eval(result);
+                        },
+                        datatype: "text",
 
-        })
+                    })
+                }
+            }
+
+
         }
-    }
-    
-        
-    }
     </script>
 
 </body>
