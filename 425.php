@@ -29,7 +29,7 @@ if($a ==1){
                 <div class='header-body'>
                     <div class='row align-items-center py-4'>
                         
-                            <h6 class='h2 text-white d-inline-block mb-0'>中间剧情</h6><br></div>
+                            <h6 class='card-title mb-3'>中间剧情</h6><br></div>
                         
 
 
@@ -46,7 +46,7 @@ if($a ==1){
             <div class='col-xl-8 center'>
                 <div class='card'>
                     <div class='card-body'><div class='col-lg-6 col-7'><div style='text-align:center' >
-                        <h3 class='card-title mb-3'>中间剧情<br>
+                        <h3 class='h2 text-white d-inline-block mb-0'>中间剧情<br>
                         </h3></div>
                         <p class='card-text mb-4'>
                             <p>

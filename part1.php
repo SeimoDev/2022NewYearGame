@@ -22,7 +22,7 @@ echo "
                     <div class='row align-items-center py-4'>
                         <div class='col-lg-6 col-7'>
                         
-                            <h6 class='h2 text-white d-inline-block mb-0'>Part 1</h6>
+                            <h6 class='card-title mb-3'>Part 1</h6>
                             <br>
                         </div>
 
@@ -41,7 +41,7 @@ echo "
                 <div class='card'>
                     <div class='card-body'>
                     <div style='text-align:center' >
-                        <h3 class='card-title mb-3'>第一关<br>
+                        <h3 class='h2 text-white d-inline-block mb-0'>第一关<br>
                         </h3></div>
                         <p class='card-text mb-4'>
                         <p>
