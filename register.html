@@ -90,33 +90,30 @@
     <script src="./jquery.min.js"></script>
     <script>
         function a() {
-
+            
             //alert("hh");
             var b = document.getElementById("mail").value;
             if (b == "") {
                 alert("请输入邮箱");
             } else {
-                if (Number(new Date()) - thetime >= 60000) {
+                if(Number(new Date()) - thetime>=60000){
                     thetime = Number(new Date());
-                    code = Math.round(Math.random() * (999999 - 100000) + 100000);
-                    $.ajax({
-                        url: "mail.php",
-                        type: "post",
-                        data: {
-                            email: document.getElementById("mail").value,
-                            code: code
-                        },
-                        success: function(result) {
-                            eval(result);
-                        },
-                        dataType: "text",
-                    });
-                } else {
-                    alert("请在" + Math.round((60000 - Number(new Date()) + thetime) / 1000) + "秒后获取");
-                }
+                //code = Math.round(Math.random() * (999999 - 100000) + 100000);
+                $.ajax({
+                    url: "mail.php",
+                    type: "post",
+                    data: { email: document.getElementById("mail").value,  },
+                    success: function (result) {
+                        eval(result);
+                    },
+                    dataType: "text",
+                });
+            }else{
+                alert("请在"+Math.round((60000-Number(new Date())+thetime)/1000)+"秒后获取");
             }
-
         }
+        
+    }            
     </script>
 
 </body>

@@ -86,12 +86,12 @@ if($a ==1){
                 <!-- 此处编写跳转逻辑（下一页还没想好） -->
                 <div class='card'>
                     <div class='card-header'>
-                        <h3 class='mb-0'>了解我们的心路历程</h3>
+                        <h3 class='mb-0'>了解我们的团队</h3>
                     </div>
                     <div class='card-body' style='text-align:center'>
                         <form>
-                            <h4>这次解密游戏倾注了我们极大的心血，欢迎了解这背后的故事！</h4>
-                            <input type='button' value='立即跳转' type='submit' name='submit' class='col-auto btn btn-sm btn-success'>
+                            <h4>这次解密游戏倾注了我们极大的心血，欢迎了解我们的团队</h4>
+                            <input type='button' value='立即跳转' type='submit' name='submit'onClick='b()' class='col-auto btn btn-sm btn-success'>
 
 
                         </form>
@@ -105,6 +105,12 @@ if($a ==1){
     </div>
     <script src='./jquery.min.js'></script>
     <script src='./bootstrap.bundle.min.js'></script>
+    <script>
+    function b(){
+        location.href='about.html';
+    }
+    </script>
+
 
 </body>
 <footer>

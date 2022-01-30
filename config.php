@@ -1,7 +1,7 @@
 <?php
-$servername = "数据库地址";
-$username = "用户名";
-$password = "密码";
-$dbname = "数据库名";
-
+$servername = "112.213.124.230:3306";
+$username = "jiemi";
+$password = "love1314%";
+$dbname = "jiemi";
+$url="http(s)://xxx.xxx.xxx/"
 ?>
