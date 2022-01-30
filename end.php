@@ -85,8 +85,8 @@ if($a ==1){
                 </div>
                 <!-- 此处编写跳转逻辑（下一页还没想好） -->
                 <div class='card'>
-                    <div class='card-header'>
-                        <h3 class='mb-0'>了解我们的团队</h3>
+                    <div class='card-header'><div style='text-align:center'>
+                        <h3 class='mb-0'>了解我们的团队</h3></div>
                     </div>
                     <div class='card-body' style='text-align:center'>
                         <form>
