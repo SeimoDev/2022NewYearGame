@@ -90,7 +90,7 @@ if($a ==1){
                     </div>
                     <div class='card-body' style='text-align:center'>
                         <form>
-                            <h4>这次解密游戏倾注了我们极大的心血，欢迎了解这前后的有趣故事和心路历程！</h4>
+                            <h4>这次解密游戏倾注了我们极大的心血，欢迎了解这背后的故事！</h4>
                             <input type='button' value='立即跳转' type='submit' name='submit' class='col-auto btn btn-sm btn-success'>
 
 
