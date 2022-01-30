@@ -22,8 +22,8 @@ echo "
                     <div class='row align-items-center py-4'>
                         <div class='col-lg-6 col-7'>
                         
-                            <h6 class='h2 text-white d-inline-block mb-0'>第一关</h6>
-                            
+                            <h6 class='h2 text-white d-inline-block mb-0'>Part 1</h6>
+                            <br>
                         </div>
 
 
@@ -41,8 +41,8 @@ echo "
                 <div class='card'>
                     <div class='card-body'>
                     <div style='text-align:center' >
-                        <h3 class='card-title mb-3'>Part 1</div>
-                        </h3>
+                        <h3 class='card-title mb-3'>第一关<br>
+                        </h3></div>
                         <p class='card-text mb-4'>
                         <p>
 
@@ -69,9 +69,9 @@ echo "
                         </div>
                         <br> 而第二天的动态更加让我无法理解，居然发出了一段我根本看不懂的东西。
 
-                        <br>
+                        <br><br>
                         --***/*****/****-/-****/***--/**---/-----/****-/*****/---**/-****/***--/*----/--***/**---/****-/----*/*****/---**/-****
-
+                        <br><br>
                         <br> 通过一番了解我才知道，这可能是一段密文，但我怎么破译呢？
 
                         <br> 思考了一段时间后，恍然大悟。
