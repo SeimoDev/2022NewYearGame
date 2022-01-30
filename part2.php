@@ -16,7 +16,7 @@ if($a ==1){
 <head>
     <meta charset='utf-8'>
     <meta content='width=device-width,user-scalable=no' name='viewport'>
-    <title>第二关</title>
+    <title>Part 2</title>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'>
     <link rel='stylesheet' href='./argon.min.css' type='text/css'>
 </head>
@@ -27,8 +27,8 @@ if($a ==1){
             <div class='container-fluid'>
                 <div class='header-body'>
                     <div class='row align-items-center py-4'>
-                        <div class='col-lg-6 col-7'>
-                            <h6 class='h2 text-white d-inline-block mb-0'>第二关</h6>
+                        <div class='col-lg-6 col-7'><div style="text-align:center" >
+                            <h6 class='h2 text-white d-inline-block mb-0'>第二关</h6></div>
                         </div>
 
 
@@ -45,7 +45,7 @@ if($a ==1){
             <div class='col-xl-8 center'>
                 <div class='card'>
                     <div class='card-body'>
-                        <h3 class='card-title mb-3'>第二关
+                        <h3 class='card-title mb-3'>Part 2
                         </h3>
                         <p class='card-text mb-4'>
                         <p>
