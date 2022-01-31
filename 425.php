@@ -28,9 +28,9 @@ if($a ==1){
             <div class='container-fluid'>
                 <div class='header-body'>
                     <div class='row align-items-center py-4'>
-                        
-                            <h6 class='h2 text-white d-inline-block mb-0'>中间剧情</h6><br></div>
-                        
+                        <div class='col-lg-6 col-7'>
+                            <h6 class='h2 text-white d-inline-block mb-0'>中间剧情</h6>
+                        </div>
 
 
                     </div>
@@ -45,13 +45,15 @@ if($a ==1){
         <div class='row'>
             <div class='col-xl-8 center'>
                 <div class='card'>
-                    <div class='card-body'><div class='col-lg-6 col-7'><div style='text-align:center' >
-                        <h3 class='card-title mb-3'>中间剧情<br>
-                        </h3></div>
+                    <div class='card-body'>
+                        <h2 class='card-header' style='text-align:center'>中间剧情
+                        </h2>
                         <p class='card-text mb-4'>
                             <p>
 
-                                将牌匾按照顺序放好后，一旁的门缓缓地打开了。<br> 我看见她站在通道的尽头，手捧鲜花笑着看向我。
+                                将牌匾按照顺序放好后，一旁的门缓缓地打开了。
+                                
+                                <br> 我看见她站在通道的尽头，手捧鲜花笑着看向我。
 
                                 <br> 我呆在了原地，老板往我手里塞给我一束鲜花，轻轻的拍拍我的肩膀。
 
@@ -63,9 +65,6 @@ if($a ==1){
 
                                 <br> 我们的爱是双向的，双向奔赴，只为离对方更近一点……
 
-                                <br>
-
-
                             </p>
 
 
@@ -74,7 +73,7 @@ if($a ==1){
                 </div>
                 <!-- 此处编写跳转逻辑（前端太懒了） -->
                 <div class='card'>
-                    <div class='card-header'>
+                    <div class='card-header'  style='text-align:center'>
                         <h3 class='mb-0'>点击按钮前往下一关！</h3>
                     </div>
                     <div class='card-body' style='text-align:center'>

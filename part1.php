@@ -9,7 +9,7 @@ echo "
 <head>
     <meta charset='utf-8'>
     <meta content='width=device-width,user-scalable=no' name='viewport'>
-    <title>Part 1</title>
+    <title>Part 1：First Encounter</title>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'>
     <link rel='stylesheet' href='./argon.min.css' type='text/css'>
 </head>
@@ -21,9 +21,7 @@ echo "
                 <div class='header-body'>
                     <div class='row align-items-center py-4'>
                         <div class='col-lg-6 col-7'>
-                        
                             <h6 class='h2 text-white d-inline-block mb-0'>Part 1</h6>
-                            <br>
                         </div>
 
 
@@ -40,9 +38,8 @@ echo "
             <div class='col-xl-8 center'>
                 <div class='card'>
                     <div class='card-body'>
-                    <div style='text-align:center' >
-                        <h3 class='card-title mb-3'>第一关<br>
-                        </h3></div>
+                        <h2 class='card-header' style='text-align:center'>第一关
+                        </h2>
                         <p class='card-text mb-4'>
                         <p>
 
@@ -69,29 +66,27 @@ echo "
                         </div>
                         <br> 而第二天的动态更加让我无法理解，居然发出了一段我根本看不懂的东西。
 
-                        <br><br>
+                        <br>
+
+                        <br>
                         --***/*****/****-/-****/***--/**---/-----/****-/*****/---**/-****/***--/*----/--***/**---/****-/----*/*****/---**/-****
-                        <br><br>
+                        <br>
+
                         <br> 通过一番了解我才知道，这可能是一段密文，但我怎么破译呢？
 
                         <br> 思考了一段时间后，恍然大悟。
-
-                        <br>
-
-                        </p>
-
 
                         </p>
                     </div>
                 </div>
                 <!-- 此处编写判断逻辑 -->
                 <div class='card'>
-                    <div class='card-header'>
+                    <div class='card-header' style='text-align:center'>
                         <h3 class='mb-0'>输入你的答案！</h3>
                     </div>
                     <div class='card-body' style='text-align:center'>
                         <form>
-                            <h5>输入你的答案：<input type='text' id='part1'></h5>
+                            <h5>答案：<input type='text' id='part1'></h5>
                             <input type='button' value='提交' type='submit' name='submit' onclick='tjp1()'
                                 class='col-auto btn btn-sm btn-success'>
 

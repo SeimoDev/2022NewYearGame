@@ -16,7 +16,7 @@ if($a ==1){
 <head>
     <meta charset='utf-8'>
     <meta content='width=device-width,user-scalable=no' name='viewport'>
-    <title>Part 2</title>
+    <title>Part 2:Meeting Again</title>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'>
     <link rel='stylesheet' href='./argon.min.css' type='text/css'>
 </head>
@@ -28,7 +28,7 @@ if($a ==1){
                 <div class='header-body'>
                     <div class='row align-items-center py-4'>
                         <div class='col-lg-6 col-7'>
-                            <h6 class='h2 text-white d-inline-block mb-0'>Part 2</h6><br>
+                            <h6 class='h2 text-white d-inline-block mb-0'>Part 2</h6>
                         </div>
 
 
@@ -44,9 +44,9 @@ if($a ==1){
         <div class='row'>
             <div class='col-xl-8 center'>
                 <div class='card'>
-                    <div class='card-body'><div style='text-align:center' >
-                        <h3 class='card-title mb-3'>第二关<br>
-                        </h3></div>
+                    <div class='card-body'>
+                        <h2 class='card-header' style='text-align:center'>第二关
+                        </h2>
                         <p class='card-text mb-4'>
                         <p>
 
@@ -68,7 +68,11 @@ if($a ==1){
 
                             <br> 她随后笑着对我说:“欢迎加入。”
 
+                            <br> 
+
                             <br> ......
+
+                            <br> 
 
                             <br> 有一天，她突然给我发消息。
 
@@ -76,7 +80,9 @@ if($a ==1){
 
                             <br> 说完，她就给我发了一个
 
-                            <a href='https://drive.sakura-bbs.cn/s/Q30sN'>音频。</a> <br> “你别说，这首歌确实不错。”
+                            <a href='https://drive.sakura-bbs.cn/s/Q30sN'>音频</a> 。
+                            
+                            <br> “你别说，这首歌确实不错。”
 
                             <br> “是吧，我也是这么觉得的，我还有事，先下了。”
 
@@ -86,9 +92,6 @@ if($a ==1){
 
                             <br> PS：原子邦妮都给我听！！！
 
-                            <br>
-
-
                         </p>
 
 
@@ -97,12 +100,12 @@ if($a ==1){
                 </div>
                 <!-- 此处编写判断逻辑 -->
                 <div class='card'>
-                    <div class='card-header'>
+                    <div class='card-header' style='text-align:center'>
                         <h3 class='mb-0'>输入你的答案！</h3>
                     </div>
                     <div class='card-body' style='text-align:center'>
                         <form>
-                            <h5>输入你的答案：<input type='text' id='part2'></h5>
+                            <h5>答案：<input type='text' id='part2'></h5>
                             <input type='button' value='提交' type='submit' name='submit' onclick='tjp2()'
                                 class='col-auto btn btn-sm btn-success'>
 
