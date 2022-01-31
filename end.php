@@ -17,7 +17,7 @@ if($a ==1){
 <head>
     <meta charset='utf-8'>
     <meta content='width=device-width,user-scalable=no' name='viewport'>
-    <title>The ending</title>
+    <title>The Ending</title>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'>
     <link rel='stylesheet' href='./argon.min.css' type='text/css'>
 </head>
@@ -28,9 +28,9 @@ if($a ==1){
             <div class='container-fluid'>
                 <div class='header-body'>
                     <div class='row align-items-center py-4'>
-                        
-                            <h6 class='card-title mb-3'>The ending</h6></div>
-                        
+                        <div class='col-lg-6 col-7'>
+                            <h6 class='h2 text-white d-inline-block mb-0'>The Ending</h6>
+                        </div>
 
 
                     </div>
@@ -45,15 +45,15 @@ if($a ==1){
         <div class='row'>
             <div class='col-xl-8 center'>
                 <div class='card'>
-                    <div class='card-body'><div class='col-lg-6 col-7'><div style='text-align:center' >
-                        <h3 class='h2 text-white d-inline-block mb-0'>The ending
-                        </h3></div>
+                    <div class='card-body' >
+                        <div style='text-align:center;'><h2 class='card-header' >结局
+                        </h2></div>
                         <p class='card-text mb-4'>
                             <p>
 
-
-
-                                没有想到，原来她的父母也是支持我的这门婚事的。<br> 有情人，终成眷属。
+                                没有想到，原来她的父母也是支持我的这门婚事的。
+                                
+                                <br> 有情人，终成眷属。
 
                                 <br> ......
 
@@ -62,6 +62,8 @@ if($a ==1){
                                 <br> 感谢年少时的我奋力拼搏，我终于走进了她的未来。
 
                                 <br> 她的未来会有我的参与，我与她的爱最终成为了我们的未来。
+
+                                <br> 
 
                                 <br> 到了婚礼上，主持人问她。
 
@@ -72,10 +74,6 @@ if($a ==1){
                                 <br> “我欲与君相知，长命无绝衰”
 
                                 <br> （全剧终）
-                                <br>
-
-                                <br>
-
 
                             </p>
 
@@ -85,8 +83,8 @@ if($a ==1){
                 </div>
                 <!-- 此处编写跳转逻辑（下一页还没想好） -->
                 <div class='card'>
-                    <div class='card-header'><div style='text-align:center'>
-                        <h3 class='mb-0'>了解我们的团队</h3></div>
+                    <div class='card-header'>
+                        <h3 class='mb-0'>了解我们的团队</h3>
                     </div>
                     <div class='card-body' style='text-align:center'>
                         <form>

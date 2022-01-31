@@ -16,7 +16,7 @@
                 <div class="header-body">
                     <div class="row align-items-center py-4">
                         <div class="col-lg-6 col-7">
-                            <h6 class="card-title mb-3">关于我们</h6>
+                            <h6 class="h2 text-white d-inline-block mb-0">关于我们</h6>
                         </div>
 
 
@@ -33,19 +33,19 @@
             <div class="col-xl-8 center">
                 <div class="card">
                     <div class="card-body">
-                        <div style="text-align:center">
-                            <h3 class="h2 text-white d-inline-block mb-0">心路历程
-                            </h3>
-                        </div>
+                        <h2 class="card-header" style="text-align:center">心路历程
+                        </h2>
                         <p class="card-text mb-4">
                             <p>
-                                陌生人，非常感谢你完成了这个游戏。<br> 这是我们第三次设计解密游戏，也是我们策划和准备时间最长的一次。
+                                陌生人，非常感谢你完成了这个游戏。
+                                <br> 这是我们第三次设计解密游戏，也是我们策划和准备时间最长的一次。
                                 <br> 我们在2022年1月19日正式决定开始制作这次解密，在此之前，我们曾做过2021年新春解密和2021年七夕解密
-                                <br> 前两次我们只在某安内部宣传，而这次出于某种原因，我们选择了多平台发布，其中包括B站。
+                                <br> 前两次我们只在某安进行宣传，而这次出于某种原因，我们选择了多平台发布，其中包括B站。
                                 <br> 在之前的活动里面，虽然发生了一些不愉快的事情，但是这不会成为我们的阻碍，只会让我们更加努力去打造一次完美的游戏体验。
-                                <br> 我们一路走来，离不开那些曾经支持过我们的朋友，是因为你们的热爱，我们才决定要竭尽全力创作这次新春解密
+                                <br> 我们一路走来，离不开那些曾经支持过我们的朋友，是因为你们的热爱，我们才决定要竭尽全力创作这次新春解密。
                                 <br> 我们感谢每一个参与这次活动的玩家，因为你们，这次活动才有了意义。
-
+                                <br> 千言万语说不出，留下的只有历史和感谢。
+                                <br> 我们有缘再见。
 
                             </p>
 
@@ -55,13 +55,11 @@
                 <!-- 此处编写逻辑 -->
                 <div class="card">
                     <div class="card-header">
-                        <div style="text-align:center">
-                            <h3 class="mb-0">制作团队</h3>
-                        </div>
+                        <h3 class="mb-0">制作团队</h3>
                     </div>
                     <div class="card-body" style="text-align:center">
                         <form>
-                            <table width="95%" cellpadding="4" cellspacing="4">
+                            <table width="90%" cellpadding="4" cellspacing="4">
                                 <tr>
                                     <td>
                                         总策划
@@ -77,10 +75,14 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><img src="img/sjss.jpg" style="max-width: 40%;max-height: 40%"></td>
-                                    <td><img src="img/seimo.jpg" style="max-width: 40%;max-height: 40%"></td>
-                                    <td><img src="img/gn.jpg" style="max-width: 40%;max-height: 40%"></td>
-                                    <td><img src="img/sjy.png" style="max-width: 40%;max-height: 40%"></td>
+<td><img src="img/sjss.png" style="max-width: 50%;max-height: 50% ; object-fit:contain;width:auto;
+height:auto;"></td>
+                                    <td><img src="img/seimo.png" style="max-width: 50%;max-height: 50% ; object-fit:contain;width:auto;
+height:auto;"></td>
+                                    <td><img src="img/gn.png" style="max-width: 50%;max-height: 50% ; object-fit:contain;width:auto;
+height:auto;"></td>
+                                    <td><img src="img/sjy.png" style="max-width: 50%;max-height: 50% ; object-fit:contain;width:auto;
+height:auto;"></td>
                                 </tr>
                                 <tr>
                                     <td>世界三傻</td>
@@ -107,33 +109,6 @@
     </div>
     <script src="./jquery.min.js"></script>
     <script src="./bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
-        function tj() {
-            if (document.getElementById("email").value == "") {
-                alert("请输入邮箱地址");
-            } else {
-                if (document.getElementById("pwd").value == "") {
-                    alert("请输入密码");
-                } else {
-                    $.ajax({
-                        url: "login.php",
-                        type: "post",
-                        data: {
-                            email: document.getElementById("email").value,
-                            password: document.getElementById("pwd").value
-                        },
-                        success: function(result) {
-                            eval(result);
-                        },
-                        datatype: "text",
-
-                    })
-                }
-            }
-
-
-        }
-    </script>
 
 </body>
 <footer>

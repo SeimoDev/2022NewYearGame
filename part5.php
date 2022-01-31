@@ -17,7 +17,7 @@ if($a ==1){
 <head>
     <meta charset='utf-8'>
     <meta content='width=device-width,user-scalable=no' name='viewport'>
-    <title>Part 5</title>
+    <title>Part 5:Final Challenge</title>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'>
     <link rel='stylesheet' href='./argon.min.css' type='text/css'>
 </head>
@@ -29,7 +29,7 @@ if($a ==1){
                 <div class='header-body'>
                     <div class='row align-items-center py-4'>
                         <div class='col-lg-6 col-7'>
-                            <h6 class='card-title mb-3'>Part 5</h6><br>
+                            <h6 class='h2 text-white d-inline-block mb-0'>Part 5</h6>
                         </div>
 
 
@@ -45,12 +45,15 @@ if($a ==1){
         <div class='row'>
             <div class='col-xl-8 center'>
                 <div class='card'>
-                    <div class='card-body'><div style='text-align:center' >
-                        <h3 class='h2 text-white d-inline-block mb-0'>第五关<br>
-                        </h3></div>
+                    <div class='card-body'>
+                        <h2 class='card-header' style='text-align:center'>第五关
+                        </h2>
                         <p class='card-text mb-4'>
                             <p>
-                                四年后，我们准备结婚了。我们也将订婚的日子定在了大年初一。<br> 今天要去见她的家长，也是我第一次见到她的父母。她的父母也是名牌大学毕业，怪不得他们的女儿也如此的优秀。
+
+                                四年后，我们准备结婚了。我们也将订婚的日子定在了大年初一。<br> 今天要去见她的家长，也是我第一次见到她的父母。
+                                
+                                <br> 她的父母也是名牌大学毕业，怪不得他们的女儿也如此的优秀。
 
                                 <br> 但她的父亲似乎不太喜欢我，我知道她对于她的父母来说是珍宝，而我将要带走她，对他们来说肯定是恋恋不舍。
 
@@ -66,17 +69,13 @@ if($a ==1){
 
                                 <br> “所以，我们给你设置了
 
-                                <a href='https://drive.sakura-bbs.cn/s/69PTO'> 最后一个考验</a>。”<br> “只要你通过了，我们也就可以把她放心地托付给你。”
+                                <a href='https://drive.sakura-bbs.cn/s/69PTO'> 最后一个考验</a>。”
+                                
+                                <br> “只要你通过了，我们也就可以把她放心地托付给你。”
 
                                 <br> “如果没有通过，很抱歉，我们只能中断这场婚事。”
 
                                 <br> “你，想清楚了么？”
-
-                                <br>
-
-
-
-
 
                             </p>
 
@@ -86,12 +85,12 @@ if($a ==1){
                 </div>
                 <!-- 此处编写判断逻辑 -->
                 <div class='card'>
-                    <div class='card-header'><div style='text-align:center'>
-                        <h3 class='mb-0'>输入你的答案！</h3></div>
+                    <div class='card-header' style='text-align:center'>
+                        <h3 class='mb-0'>输入你的答案！</h3>
                     </div>
                     <div class='card-body' style='text-align:center'>
                         <form>
-                            <h5>输入你的答案：<input type='text'id='part5'></h5>
+                            <h5>答案：<input type='text'id='part5'></h5>
                             <input type='button' value='提交' type='submit' name='submit'onclick='tjp5()' class='col-auto btn btn-sm btn-success'>
 
 

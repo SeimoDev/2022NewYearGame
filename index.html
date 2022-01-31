@@ -16,7 +16,7 @@
                 <div class="header-body">
                     <div class="row align-items-center py-4">
                         <div class="col-lg-6 col-7">
-                            <h6 class="card-title mb-3">欢迎游玩</h6><br>
+                            <h6 class="h2 text-white d-inline-block mb-0">新春解密活动</h6>
                         </div>
 
 
@@ -32,62 +32,33 @@
         <div class="row">
             <div class="col-xl-8 center">
                 <div class="card">
-                    <div class="card-body">
-                        <div style="text-align:center">
-                            <h3 class="h2 text-white d-inline-block mb-0">用户协议
-                            </h3>
-                        </div>
-                        <p class="card-text mb-4">
-                            <p>
-                                1.一旦点击『开始游玩』即代表您已充分阅读并理解本协议的全部内容。 <br> 2.本游戏适合16岁以上智力正常的玩家，未成年及智力障碍玩家请在父母或其他法律监护人的陪同下阅读本协议。
-                                <br> 3.本解密游戏依照中华人民共和国宪法记相关法律法规制作。 <br> 4.主创团队立足于中华人民共和国，受当地法律保护。
-                                <br> 5.如果在游玩过程中有任何心理和生理上的不适，请立即停止游玩并退出，立即拨打120电话求救。
-                                <br> 6.本游戏主创团队不对游戏过程中发生的非主观事故（如游玩过程中猝死等）负责。
-                                <br> 7.在主创团队所公开的游戏正式结束时间到达前，请勿传播任何形式的攻略/解析/答案。
-                                <br> 8.本游戏无需支付任何费用即可参与，若在游玩过程中有人向您索要金钱或其他财务，请通过下方邮箱联系主创团队并拨打110报警电话。
-                                <br> 9.游玩本游戏造成任何财产损失的，非主创团队主观因素的，主创团队不承担任何法律责任。
-                                <br> 10.出于恶意游玩/竞争导致主创团队造成损失的，我们将予以封锁ip并拨打110报警处理。
-                                <br> 11.任何人不得借本游戏之名出于任何原因对任何人进行包括但不限于人身攻击，精神诋毁等。
-                                <br> 12.违反本协议所列条款者将被取消游戏资格，成绩并封锁ip，造成严重不良影响的主创团队将拨打110报警处理。
-                                <br> 13.本游戏账号不得外借，不得租赁，不得转让，不得赠送，一旦发现将对违规账号进行封禁并封锁全部涉及ip。
-                                <br> 14.本协议中未列问题解释权归本游戏主创团队所有。
-                                <br> 15.本协议所列各条款最终解释权归本游戏主创团队所有。
-                                <br>
-                            </p>
-
-
-
-                        </p>
+                    <div class="card-header" style="text-align:center">
+                        <h2 class="mb-0">游玩须知</h2>
                     </div>
-                </div>
-                <div class="card">
                     <div class="card-body">
-                        <div style="text-align:center">
-                            <h3 class="h2 text-white d-inline-block mb-0">游玩须知
-                            </h3>
-                        </div>
-                        <p class="card-text mb-4">
-                            1.本活动建议使用电脑游玩。<br> 2.本活动所有答案皆为可以读通顺的中文句子，长短不限。
-                            <br> 3.如需输入答案，请确保您所输入的为中文逗号（，）且句子结尾没有中文句号（。）
-                            <br> 4.所有关卡的线索无法跨关使用。
-                            <br> 5.认真阅读TOS（用户协议）
-                            <br> 6.祝玩的开心！
-                            <br>
-                        </p>
+                        <form>
+                            <h5><p class="card-text mb-4">
+                                1.本活动建议使用电脑游玩。<br> 2.本活动所有答案皆为可以读通顺的中文句子，长短不限。
+                                <br> 3.如需输入答案，请确保您所输入的为中文逗号（，）且句子结尾没有中文句号（。）
+                                <br> 4.所有关卡的线索无法跨关使用。
+                                <br> 5.认真阅读TOS（用户协议）
+                                <br> 6.祝玩的开心！
+                                <br>
+                                    </h5>
+                        </form> 
                     </div>
                 </div>
                 <!-- 此处编写登录逻辑 -->
                 <div class="card">
-                    <div class="card-header">
-                        <div style="text-align:center">
-                            <h3 class="mb-0">登录账号，开始游戏！</h3>
-                        </div>
+                    <div class="card-header" style="text-align:center">
+                        <h3 class="mb-0">登录账号，开始游戏！</h3>
                     </div>
                     <div class="card-body" style="text-align:center">
                         <form>
                             <input type="text" id="email" placeholder="登录邮箱"></h5><br><br>
                             <input type="password" id="pwd" placeholder="密码"></h5><br><br>
-                            <input type="button" name="submit" value="开始游玩！" class="col-auto btn btn-sm btn-success" onclick="tj()"><br>
+                            <input type="button" name="submit" value="开始游玩！" class="col-auto btn btn-sm btn-success"
+                                onclick="tj()"><br>
                             <br><a href="register.html">没有账号？点击注册。</a>
                         </form>
 
@@ -110,11 +81,8 @@
                     $.ajax({
                         url: "login.php",
                         type: "post",
-                        data: {
-                            email: document.getElementById("email").value,
-                            password: document.getElementById("pwd").value
-                        },
-                        success: function(result) {
+                        data: { email: document.getElementById("email").value, password: document.getElementById("pwd").value },
+                        success: function (result) {
                             eval(result);
                         },
                         datatype: "text",
