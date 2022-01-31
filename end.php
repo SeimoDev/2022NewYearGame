@@ -45,9 +45,15 @@ if($a ==1){
         <div class='row'>
             <div class='col-xl-8 center'>
                 <div class='card'>
+<<<<<<< HEAD
                     <div class='card-body' >
                         <div style='text-align:center;'><h2 class='card-header' >结局
                         </h2></div>
+=======
+                    <div class='card-body'><div style='text-align:center' >
+                        <h3 class='card-title mb-3'>The ending
+                        </h3></div>
+>>>>>>> c34da452265a25b5a746b403056a36be15f78a2f
                         <p class='card-text mb-4'>
                             <p>
 
