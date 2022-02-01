@@ -13,7 +13,7 @@ if (isset($_POST['p1'])) {
             echo "alert('密码错误！')";
         }
     } else {
-        echo "你调用你🐎呢？";
+        echo "无权调用";
     }
 }
 
@@ -28,13 +28,13 @@ if (isset($_POST['p2'])) {
             echo "alert('密码错误！')";
         }
     } else {
-        echo "你调用你🐎呢？";
+        echo "无权调用";
     }
 }
 
 if (isset($_POST['p3'])) {
     if ($_SERVER['HTTP_REFERER'] == $url."part3.php") {
-        if ($_POST['p3'] == "众里寻他千百度，蓦然回首，那人却在，灯火阑珊处") {
+        if ($_POST['p3'] == "众里寻他千百度，蓦然回首，那人却在，灯火阑珊处"||$_POST['p3'] == "蓦然回首，那人却在，灯火阑珊处") {
             $sql3 = "UPDATE user SET four=1 WHERE uuid ='" . $_COOKIE['uuid'] . "'";
             mysqli_query($conn, $sql3);
             mysqli_close($conn);
@@ -43,7 +43,7 @@ if (isset($_POST['p3'])) {
             echo "alert('密码错误！')";
         }
     } else {
-        echo "你调用你🐎呢？";
+        echo "无权调用";
     }
 }
 
@@ -60,7 +60,7 @@ if (isset($_POST['p4'])) {
             echo "alert('密码错误！')";
         }
     } else {
-        echo "你调用你🐎呢？";
+        echo "无权调用";
     }
 }
 
@@ -75,6 +75,6 @@ if (isset($_POST['p5'])) {
             echo "alert('密码错误！')";
         }
     } else {
-        echo "你调用你🐎呢？";
+        echo "无权调用";
     }
 }
