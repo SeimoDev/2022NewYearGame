@@ -13,7 +13,7 @@ if (isset($_POST['email'])) {
     } else {
         mysqli_close($conn);
         if (isset($a)) {
-            if ($_POST['password'] == $a) {
+            if (md5($_POST['password']) == $a) {
                 $conn = mysqli_connect($servername, $username, $password, $dbname);
                 $mail = $_POST['email'];
                 $sql2 = "SELECT uuid FROM user WHERE mail ='" . $mail . "'";
