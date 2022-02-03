@@ -1,3 +1,7 @@
+English | [中文](https://github.com/seimo-official/2022NewYearGame/blob/main/README-zh.md)
+
+---
+
 # 2022NewYearGame
 A fun game for 2022 China Neay year.
 
